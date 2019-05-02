@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="DropDown">
+        <crown name="DropDown">
+            <desc>user script</desc>
+            <serves>
+                <function name="getDynamicSelection">
+                    <desc>No description yet...</desc>
+                    <return name="dynParam" type="string" desc="No description yet..."/>
+                </function>
+                <function name="setFixedSelection">
+                    <desc>No description yet...</desc>
+                    <param name="item" type="string" desc="No description yet..."/>
+                </function>
+                <function name="setDynamicSelection">
+                    <desc>No description yet...</desc>
+                    <param name="item" type="string" desc="No description yet..."/>
+                </function>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="tags">Page,Device Independent</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+        <entry path="pages" default="DropDown.msdd">
+            <file type="application/zip">DropDown.msdd</file>
+        </entry>
+        <entry path="scripts" default="DropDown.lua">
+            <file type="text/x-lua">DropDown.lua</file>
+        </entry>
+    </application>
+</manifest>
