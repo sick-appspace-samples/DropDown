@@ -4,32 +4,29 @@
         <crown name="DropDown">
             <desc>user script</desc>
             <serves>
-                <function name="getDynamicSelection">
-                    <desc>No description yet...</desc>
-                    <return name="dynParam" type="string" desc="No description yet..."/>
+                <function name="setSelection">
+                    <desc></desc>
+                    <param name="sel" type="string" desc=""/>
                 </function>
-                <function name="setFixedSelection">
-                    <desc>No description yet...</desc>
-                    <param name="item" type="string" desc="No description yet..."/>
+                <function name="getSelection">
+                    <desc></desc>
+                    <return name="selection" type="string" desc=""/>
                 </function>
-                <function name="setDynamicSelection">
-                    <desc>No description yet...</desc>
-                    <param name="item" type="string" desc="No description yet..."/>
+                <function name="setSelectionGroups">
+                    <desc></desc>
+                    <param name="sel" type="string" desc=""/>
+                </function>
+                <function name="getSelectionGroups">
+                    <desc></desc>
+                    <return name="return1" type="string" desc=""/>
                 </function>
             </serves>
         </crown>
         <meta key="author">AppSpace Sample</meta>
-        <meta key="version">2.5.0</meta>
-        <meta key="licensed">false</meta>
+        <meta key="version">1.0</meta>
         <meta key="priority">low</meta>
-        <meta key="tags">Page,Device Independent</meta>
         <meta key="read-protected">false</meta>
         <meta key="copy-protected">false</meta>
-        <entry path="pages" default="DropDown.msdd">
-            <file type="application/zip">DropDown.msdd</file>
-        </entry>
-        <entry path="scripts" default="DropDown.lua">
-            <file type="text/x-lua">DropDown.lua</file>
-        </entry>
+        <entry path="scripts" default="main.lua"/>
     </application>
 </manifest>

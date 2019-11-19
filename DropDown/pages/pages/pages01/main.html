@@ -1,0 +1,32 @@
+<layout-column id="ColumnLayout1" style="align-items:stretch">
+	<davinci-value-display id="ValueDisplay1" label="Fixed Data (Choices are defined in control's options)">
+		</davinci-value-display>
+	<davinci-drop-down id="DropDown1"  label="Without groups"   class="ddwidthfix">
+          <davinci-option id="Option1" value="1" ><span>This is a first fixed choice</span></davinci-option>
+          <davinci-option id="Option2" value="2"><span>This is a second fixed choice</span></davinci-option>
+          <davinci-option id="Option3" value="3"><span>This is a third fixed choice</span></davinci-option>
+					<crown-binding event="change" name="DropDown/setSelection" path="param/args/sel" auto-commit></crown-binding>
+					<crown-binding property="value" name="DropDown/getSelection" path="result/data/selection" auto-update="0" update-on-resume></crown-binding>
+			</davinci-drop-down>
+	<davinci-drop-down id="DropDown2"  label="With groups"  class="ddwidthfix">
+					<davinci-option-group id="OptionGroup1" label="First option group">
+						<davinci-option id="Option4" value="o1g1">
+							<span>This is a first fixed choice of a first option group</span>
+						</davinci-option>
+						<davinci-option id="Option5" value="o1g1">
+							<span>This is a second fixed choice of a first option group</span>
+						</davinci-option>
+					</davinci-option-group>
+					<davinci-option-group id="OptionGroup2" label="Second option group">
+						<davinci-option id="Option6" value="o1g2">
+							<span>This is a first fixed choice of a second option group</span>
+						</davinci-option>
+						<davinci-option id="Option7" value="o2g2">
+							<span>This is a second fixed choice of a second option group</span>
+						</davinci-option>
+					</davinci-option-group>
+					<crown-binding event="change" name="DropDown/setSelectionGroups" path="param/args/sel" auto-commit></crown-binding>
+					<crown-binding property="value" name="DropDown/getSelectionGroups" path="result/data/selection" auto-update="0" update-on-resume></crown-binding>
+				</davinci-drop-down>
+  
+</layout-column>
