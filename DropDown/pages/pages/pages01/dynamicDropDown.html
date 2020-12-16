@@ -1,0 +1,12 @@
+<layout-row id="RowLayout1">
+			<davinci-drop-down id="DropDown2">
+  <crown-binding property="data" name="DropDown/getBlockIDs" path="result/data/return1" auto-update="0" update-on-resume converter="s => JSON.parse(s)"></crown-binding>
+		<crown-binding event="change" name="DropDown/setSelection_dynamic" path="param/args/value" auto-commit></crown-binding>
+		<crown-binding property="value" name="DropDown/getSelection_dynamic" path="result/data/return1" auto-update="0" update-on-resume></crown-binding>
+		<crown-edpws-binding property="data" name="DropDown/OnNewValues" converter="s => JSON.parse(s)" update-on-resume></crown-edpws-binding>
+	</davinci-drop-down>
+	<davinci-button id="Button1" type="primary">
+		<span>Add options</span>
+		<crown-binding event="submit" name="DropDown/extendTable" auto-commit></crown-binding>
+	</davinci-button>
+</layout-row>

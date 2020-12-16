@@ -1,6 +1,6 @@
 Log.setLevel("INFO")
 
-local selection = "1"
+local selection = "o1g1"
 
 --@setSelection(sel:string):
 local function setSelection(sel)
