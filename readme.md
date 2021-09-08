@@ -1,5 +1,6 @@
 ## DropDown
 Using DropDown element in the UI with fixed values.
+
 ### Description
 This sample shows the usage of DropDown element on a device page. There are two options shown with static entries and values and one option with dynamic entries.
 1. Options without group. DropDown entries are shown as a list and displayed on the same level. 
