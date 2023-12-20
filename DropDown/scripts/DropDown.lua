@@ -36,14 +36,14 @@ Script.serveFunction( 'DropDown.setDynamicSelection', 'gSetDynamicSelection', 's
 
 --Start of Function and Event Scope---------------------------------------------
 
--- function is called when an entry of the fixed drop-down control is selected
---@gSetFixedSelection(item:string)
+---function is called when an entry of the fixed drop-down control is selected
+---@param item string
 function gSetFixedSelection(item)
   print(item)
 end
 
--- function is called to get the entries for the dynamic drop-down control
---@gGetDynamicSelection():string
+---function is called to get the entries for the dynamic drop-down control
+---@return string dynParam
 function gGetDynamicSelection()
   -- Defining the label entries
   local l1 = 'Choice 1'
@@ -62,8 +62,8 @@ function gGetDynamicSelection()
   return dynParam
 end
 
--- function is called when an entry of the dynamic drop-down control selected
---@gSetDynamicSelection(item:string)
+---function is called when an entry of the dynamic drop-down control selected
+---@param item string
 function gSetDynamicSelection(item)
   print(item)
 end
